@@ -5,14 +5,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Week 3 - Semantics and Lists</title>
 </head>
+
 <body>
     <header>
         <h1>HTML Week 3 - Semantics and Lists</h1>
-        <h3> PLus an intro to CSS</h3>
+        <h3> <i>Plus an intro to CSS</i></h3>
     </header>
     <nav>
         <!-- the nav tag reserves a space for navigation. you can have multiple links to different websites-->
-         <a href="https://www.alansancer.com/">Get to know me and my work</a>
+         <a href="https://www.alansancer.com/" title="click me pwease uwu">Get to know me and my work</a>
+         <!-- when you want to add a preview when you put ur cursor on top of a link you can do <a href="#" title="the very important messagge goes inside here"-->
+        <ul>
+            <!-- ul stand for unordered list, you can also put other tags like lists inde of the item list-->
+            <li> <a href="https://www.alansancer.com/">about</a></li>
+             <li> <a href="#">stuff</a></li>
+            <li> <a href="#" >fancy stuff</a></li>
+        </ul>
     </nav>
 
     <main>
@@ -21,16 +29,37 @@
             <!-- Articles most have a a header (h1-h6)-->
             <h2> This is the title of a very important article</h2>            
             <!-- It also have paragraphs (p)-->
-             <p> This is the text of a very important article</p>
+             <p> This is the text of a very <em>important article</em></p>
+             <blockquote>
+                <!-- It doesnt really change the presentation of the quotes at the end mostly because of css. It helps you understand
+                 and find your stuff easily with the use of css-->
+                <p> A blockquote has different default styling from <strong>regular</strong> text</p>
+                <cite>-- yo mama this morning</cite>
+                <p> E=MC<sup>2</sup></p>
+                <cite> <b>--An old German man</b> </cite>
+             </blockquote>
+             <!-- lists are a particular way of organizing content in HTML(theres three different ones)-->
+              <ol>
+                <!-- ol stands for ordered list-->
+                 <li> This is the first list item</li>
+                 <li> This sis the <sup> second</sup> list</li>
+                 <li> And this will be the <b> third</b></li>
+              </ol>
         </article>
         <!-- The aside tag is used to separate the content that is not necessary to understand the page-->
         <aside>
             <h3> A side has to have a heading</h3>
+            <!-- A paragraph is a block element, therefore it will push content down to the main line-->
             <p> It also should containt its beautiful paragraph</p>
+            <p> A second paragraph</p>
+            <!-- em and strogn elements are in-line elements, they go with the flow of the text and doesnot create a new line. a link
+             element is also in  line, since you try to add the link within a text it will do it within the flow of the text-->
+           <mark><em> I am emphasising this text</em>/<strong> Extra emphasis of my text</strong></mark>
         </aside>
     </main>
     <footer>
         <p>scary stuff &copy; scary people</p>
+        <address>pesherman walabi 2 <br>Sydney</address>
     </footer>
 </body>
 </html>
